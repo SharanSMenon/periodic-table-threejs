@@ -1,0 +1,143 @@
+body {
+  height: 100vh;
+  background-color: #000;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.menu {
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.element {
+  width: 120px;
+  height: 160px;
+  text-align: center;
+  cursor: default;
+  border: 1px solid #7fffff40;
+  font-family: Helvetica, sans-serif;
+  line-height: normal;
+  transition: width .5s, height .5s;
+  box-shadow: 0 0 12px #00ffff80;
+}
+
+.element:hover {
+  border: 1px solid #7fffffbf;
+  box-shadow: 0 0 12px #00ffffbf;
+}
+
+.element .number {
+  color: #7fffffbf;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+
+.element .body {
+  visibility: hidden;
+}
+
+.element .symbol {
+  color: #ffffffbf;
+  text-shadow: 0 0 10px #00fffff2;
+  font-size: 60px;
+  font-weight: bold;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+.element .details {
+  color: #7fffffbf;
+  font-size: 12px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+button {
+  color: green;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: 1px solid green;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: #90ee90;
+}
+
+button:active {
+  color: #fff;
+  background-color: green;
+}
+
+.large {
+  width: 500px;
+  height: 400px;
+  display: flex;
+}
+
+.large .close {
+  visibility: visible;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close, .large .symbol, .large .details, .large .number {
+  visibility: hidden;
+}
+
+.large .body {
+  text-align: left;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #006400e6;
+  padding: 0 10px;
+  font-size: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.large .body h1 {
+  text-shadow: 0 0 10px #00fffff2;
+}
+
+.large .body .body-header {
+  flex-direction: row;
+  gap: 10px;
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: arial, sans-serif;
+}
+
+td, th {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(2n) {
+  background-color: #00aa0080;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
